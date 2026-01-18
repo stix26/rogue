@@ -66,7 +66,7 @@ Rogue operates on a **client-server architecture** with multiple interfaces:
 | **TUI**    | Modern terminal interface (Go + Bubble Tea) |
 | **CLI**    | Non-interactive mode for CI/CD pipelines    |
 
-![Rogue Scenario Editor Demo](./rogue-scenario-editor-demo.mov)
+<video src="./rogue-scenario-editor-demo.mov" controls width="100%"></video>
 
 *Example: Scenario Editor showing a user requesting a discount. The agent correctly refuses to provide discounts, demonstrating policy compliance testing.*
 
