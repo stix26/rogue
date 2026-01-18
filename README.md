@@ -135,9 +135,9 @@ uvx rogue-ai
 uvx rogue-ai cli
 ```
 
-### Apple Silicon (M1/M2/M3) Setup
+### Apple Silicon (M1/M2/M3/M4/M5) Setup
 
-On Apple Silicon Macs, you may need to install Python 3.10+ using `uv`, as the system Python may be older:
+On Apple Silicon Macs (M1, M2, M3, M4, M5), you may need to install Python 3.10+ using `uv`, as the system Python may be older:
 
 ```bash
 # Install uv (provides uvx)
