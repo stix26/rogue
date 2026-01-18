@@ -66,9 +66,11 @@ Rogue operates on a **client-server architecture** with multiple interfaces:
 | **TUI**    | Modern terminal interface (Go + Bubble Tea) |
 | **CLI**    | Non-interactive mode for CI/CD pipelines    |
 
-<video src="./rogue-scenario-editor-demo.mov" controls width="100%"></video>
+![Rogue Scenario Editor Demo](./rogue-scenario-editor-demo.mov)
 
 *Example: Scenario Editor showing a user requesting a discount. The agent correctly refuses to provide discounts, demonstrating policy compliance testing.*
+
+**Note:** The video file (`.mov`) is included in the repository. For optimal GitHub README display with auto-play, convert to `.gif` format using: `ffmpeg -i rogue-scenario-editor-demo.mov -vf "fps=10,scale=800:-1:flags=lanczos" rogue-scenario-editor-demo.gif`
 
 ### Supported Protocols
 
