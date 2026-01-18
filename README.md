@@ -135,9 +135,9 @@ uvx rogue-ai
 uvx rogue-ai cli
 ```
 
-### Apple Silicon (M1/M2/M3/M4/M5) Setup
+### Apple Silicon Setup
 
-On Apple Silicon Macs (M1, M2, M3, M4, M5), you may need to install Python 3.10+ using `uv`, as the system Python may be older:
+On Apple Silicon Macs (M1/M2/M3/M4/M5), the system Python may be older than 3.10. Install Python 3.11+ using `uv`:
 
 ```bash
 # Install uv (provides uvx)
@@ -146,22 +146,21 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # Add to PATH (add to ~/.zshrc for persistence)
 export PATH="$HOME/.local/bin:$PATH"
 
-# Install Python 3.11+ using uv (required for Rogue)
+# Install Python 3.11+ using uv
 uv python install 3.11
 
-# Verify Python version
+# Verify installation
 uv python list
+```
 
+Then clone and run:
+
+```bash
 # Clone the repository
 git clone https://github.com/qualifire-dev/rogue.git
 cd rogue
 
-# Update configuration for A2A protocol (if using example agent)
-# Edit .rogue/user_config.json and set:
-#   "protocol": "a2a"
-#   "evaluated_agent_url": "http://localhost:10001"
-
-# Start the server with example agent
+# Start server with example agent
 uvx rogue-ai server --example=tshirt_store --host 127.0.0.1 --port 8000
 
 # In a new terminal, launch the TUI
@@ -169,7 +168,7 @@ export PATH="$HOME/.local/bin:$PATH"
 uvx rogue-ai tui
 ```
 
-**Note:** The TUI requires an interactive terminal. On macOS, you may need to run it in a new Terminal window. If you encounter "device not configured" errors, ensure you're running the TUI in an interactive terminal session.
+**Note:** The TUI requires an interactive terminal. On macOS, run it in a new Terminal window. If using the example agent, configure the TUI with protocol `A2A` and agent URL `http://localhost:10001`.
 
 ### Try It With the Example Agent
 
